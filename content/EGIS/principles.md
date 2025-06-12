@@ -1,6 +1,6 @@
 +++
 title = "Principles"
-date = 2019-11-27
+date = 2020-11-29
 +++
 
 This is the principles page
