@@ -3,6 +3,7 @@ title = "egis"
 sort_by = "date"
 template = "multi.html"
 weight = 2
+in_search_index = true
 +++
 ### What is EGIS ?
 EGIS is an acronym for sustainable software, which means software that is:

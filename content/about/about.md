@@ -1,6 +1,7 @@
 +++
 title = "Index"
 date = 2019-11-27
+in_search_index = true
 +++
 ### Our Story
 
@@ -8,7 +9,7 @@ We all are in the midst of a climate and ecological breakdown. We are facing an 
 
 There is no time and every single step can make a change: on the street, on the web, and behind that web. At Faircolibri we are experienced IT engineers and we are active for the climate. We want to use that experience to help organisations reduce carbon footprint, and promote via their IT climate justice and inclusivity.
 
-{{< figure src="/images/faircolibri-logo-text-small.png" width="200">}}
+<img src="faircolibri-logo-text.png" width="200">
 
 The name **"Fair Colibri"** litearlly means **"Fair Hummingbird"** in french and is inspired by the legend of that little bird who decided to save the forest. 
 
