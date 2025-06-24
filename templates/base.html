@@ -9,12 +9,18 @@
 <body>
 <p>
   <img src="faircolibri-logo-text-small.png" width="100">
+  {% if lang=="en" %}
   <a href="{{ get_url(path='') }}">Home</a>
   <a href="{{ get_url(path='@/blog/_index.md') }}">Posts</a>
   <a href="{{ get_url(path='@/EGIS/_index.md') }}">Egis</a>
   <a href="{{ get_url(path='@/about/_index.md') }}">About</a>
+  {% else %}
+  <a href="{{ get_url(path='') }}">Home</a>
+  <a href="{{ get_url(path='@/blog/_index.md') }}">Posts</a>
+  <a href="{{ get_url(path='@/EGIS/_index.md') }}">Egis</a>
+  <a href="{{ get_url(path='@/about/_index.md') }}">A propos</a>
+  {% endif %}
 </p>
-
 
   <section class="section">
     <div class="container">

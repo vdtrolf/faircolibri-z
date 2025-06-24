@@ -9,6 +9,16 @@ build_search_index = true
 
 title = "Fair colibri"
 
+default_language = "fr"
+
 [extra]
 # Put all your custom variables here
 
+[languages.fr]
+taxonomies = [
+    {name = "auteurs"},
+    {name = "tags"},
+]
+
+[languages.fr.translations]
+summary = "Mon blog"
