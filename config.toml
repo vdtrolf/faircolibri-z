@@ -22,3 +22,15 @@ taxonomies = [
 
 [languages.fr.translations]
 summary = "Mon blog"
+title = "Fr"
+
+[languages.en]
+taxonomies = [
+    {name = "writers"},
+    {name = "tags"},
+]
+
+
+[languages.en.translations]
+summary = "My blog"
+title = "En"
