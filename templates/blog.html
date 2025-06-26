@@ -7,8 +7,11 @@
 <ul>
   <!-- If you are using pagination, section.pages will be empty.
        You need to use the paginator object -->  
+   <div class="flex-container">
   {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+    <div><a href="{{ page.permalink | safe }}">{{ page.title }}</a></div>
   {% endfor %}
+  </div> 
+
 </ul>
 {% endblock content %}

@@ -8,24 +8,19 @@
 
 <body>
 <p>
-  <img src="faircolibri-logo-text-small.png" width="100">
   {% if lang=="en" %}
-  <a href="{{ get_url(path='') }}">Home</a>
+  <a href="{{ get_url(path='', lang='en') }}"><img src="{{ get_url(path='faircolibri-logo-text-small.png') }}" width="100"></a>
   <a href="{{ get_url(path='@/blog/_index.md', lang='en') }}">Posts</a>
   <a href="{{ get_url(path='@/EGIS/_index.md', lang='en') }}">Egis</a>
   <a href="{{ get_url(path='@/about/_index.md', lang='en') }}">About</a>
-  <a class="navbar-item" href="{{ get_url(path='', lang='fr') }}">
-    <img src="fr_64.png" width="112" height="28" alt="french">
-  </a>
+  <a href="{{ get_url(path='', lang='fr') }}">Fr</a>
 
   {% else %}
-  <a href="{{ get_url(path='') }}">Home</a>
-  <a href="{{ get_url(path='@/blog/_index.md', lang='fr') }}">Posts</a>
+  <a href="{{ get_url(path='', lang='fr') }}"><img src="{{ get_url(path='faircolibri-logo-text-small.png') }}" width="100"></a>
   <a href="{{ get_url(path='@/EGIS/_index.md', lang='fr') }}">Egis</a>
   <a href="{{ get_url(path='@/about/_index.md', lang='fr') }}">A propos</a>
-  <a class="navbar-item" href="{{ get_url(path='', lang='en') }}">
-    <img src="en_64.png" width="112" height="28" alt="english">
-  </a>  {% endif %}
+  <a href="{{ get_url(path='', lang='en') }}">En</a>
+  {% endif %}
   
 </p>
 

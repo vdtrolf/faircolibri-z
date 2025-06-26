@@ -22,7 +22,7 @@ taxonomies = [
 
 [languages.fr.translations]
 summary = "Mon blog"
-title = "FFr"
+title = "Fr"
 
 [languages.en]
 taxonomies = [
@@ -33,4 +33,4 @@ taxonomies = [
 
 [languages.en.translations]
 summary = "My blog"
-title = "EEn"
+title = "En"
