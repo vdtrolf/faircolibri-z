@@ -1,7 +1,8 @@
 +++
 title = "egis"
 sort_by = "date"
-template = "multi.html"
+template = "blog.html"
+page_template = "blog-page.html"
 weight = 2
 in_search_index = true
 +++

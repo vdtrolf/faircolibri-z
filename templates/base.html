@@ -11,36 +11,34 @@
 <body>
   <div class="body-container">
     <div class="topbar-container">
-     
-        {% if lang=="en" %}
-        <div class="logo-container">        
-          <div><a href="{{ get_url(path='', lang='en') }}"><img src="{{ get_url(path='faircolibri-logo-text-small.png') }}" width="100"></a></div>
-          <div> 
-            <button hx-get="{{ get_url(path='@/blog/_index.md', lang='en') }}" hx-swap="outerHTML">
-              Blog
-            </button></div>
-        </div>
-        <div class="menu-container">
-          <div><a href="{{ get_url(path='@/blog/_index.md', lang='en') }}">Posts</a></div>
-          <div><a href="{{ get_url(path='@/EGIS/_index.md', lang='en') }}">Egis</a></div>
-          <div><a href="{{ get_url(path='@/about/_index.md', lang='en') }}">About</a></div>
-          <div><a href="{{ get_url(path='', lang='fr') }}">Fr</a></div>
-        </div>
-        {% else %}
-        <div class="logo-container">  
-          <div><a href="{{ get_url(path='', lang='fr') }}"><img src="{{ get_url(path='faircolibri-logo-text-small.png') }}" width="100"></a></div>
-        </div>
-        <div class="menu-container">
-          <div><a href="{{ get_url(path='@/EGIS/_index.md', lang='fr') }}">Egis</a></div>
-          <div><a href="{{ get_url(path='@/about/_index.md', lang='fr') }}">A propos</a></div>
-          <div><a href="{{ get_url(path='', lang='en') }}">En</a></div>
-        </div>
-        {% endif %}
+      {% if lang=="en" %}
+      <div class="logo-container">        
+        <div><a href="{{ get_url(path='', lang='en') }}"><img src="{{ get_url(path='faircolibri-logo-text-small.png') }}" width="100"></a></div>
+        <div> 
+          <button hx-get="{{ get_url(path='@/blog/_index.md', lang='en') }}" hx-swap="outerHTML">
+            Blog
+          </button></div>
       </div>
+      <div class="menu-container">
+        <div><a href="{{ get_url(path='@/blog/_index.md', lang='en') }}">Posts</a></div>
+        <div><a href="{{ get_url(path='@/EGIS/_index.md', lang='en') }}">Egis</a></div>
+        <div><a href="{{ get_url(path='@/about/_index.md', lang='en') }}">About</a></div>
+        <div><a href="{{ get_url(path='', lang='fr') }}">Fr</a></div>
+      </div>
+      {% else %}
+      <div class="logo-container">  
+        <div><a href="{{ get_url(path='', lang='fr') }}"><img src="{{ get_url(path='faircolibri-logo-text-small.png') }}" width="100"></a></div>
+      </div>
+      <div class="menu-container">
+        <div><a href="{{ get_url(path='@/EGIS/_index.md', lang='fr') }}">Egis</a></div>
+        <div><a href="{{ get_url(path='@/about/_index.md', lang='fr') }}">A propos</a></div>
+        <div><a href="{{ get_url(path='', lang='en') }}">En</a></div>
+      </div>
+      {% endif %}
     </div>
 
     <section class="section-container">
-      <div class="container">
+      <div>
         {% block content %} {% endblock content %}
       </div>
     </section>

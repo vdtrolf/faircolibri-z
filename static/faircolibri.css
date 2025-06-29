@@ -1,3 +1,12 @@
+a, u {
+  text-decoration: none;
+  color:darkolivegreen;
+}
+
+a.hover {
+  font-weight: bold;
+  color:black;
+}
 
 .body-container {
   display: flex;
@@ -18,7 +27,7 @@
   display: flex;
   flex-direction: row;
   background-color: rgb(184, 184, 184);
-  padding: 20px;
+  
 }
 
 .logo-container {
@@ -36,25 +45,58 @@
 .menu-container > div {
   margin: 10px;
   font-size: 20px;
-  font-weight:lighter;
+  font-weight:bold;
   color:black;
 }
 
-.menu-container > div.hover {
-  margin: 10px;
-  font-size: 20px;
-  font-weight: bold;
-  color: blueviolet;
+.menu-container :hover {
+  color: black;
 }
 
-.flex-container {
+.blogpage-container {
   display: flex;
-  background-color: DodgerBlue;
+  justify-content : flex-start; 
+  flex-direction: row; 
 }
 
-.flex-container > div {
-  background-color: #f1f1f1;
+.blogpage-column {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  background-color: rgb(171, 187, 163);
+  padding: 20px;
+  color:cadetblue;
+}
+
+.blogpage-column-h1 {
+  padding-bottom: 10px;
+}
+
+.blogpage-column-h2 {
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+.blogpage-column :hover {
+  color: black;
+}
+
+
+
+.blogpage-content {
+  padding: 20px;
+}
+
+.blog-container {
+  display: flex;
+  justify-content : flex-end; 
+  flex-direction: row; 
+}
+
+.blog-container > div {
+  background-color:  rgb(128, 128, 128);
   margin: 10px;
   padding: 20px;
-  font-size: 30px;
+  font-size: 20px;
 }
+

@@ -1,5 +1,6 @@
 +++
 title = "Pile technologique efficace - openstack + openFaas"
+description = "Comment utiliser les outils open-source pour construire un cloud permettant le serverless"
 date = 2019-11-27
 in_search_index = true
 +++
