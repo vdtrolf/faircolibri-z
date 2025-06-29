@@ -1,0 +1,60 @@
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(224, 224, 224);
+}
+
+.topbar-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: rgb(128, 128, 128);
+}
+
+.section-container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(184, 184, 184);
+  padding: 20px;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content : flex-end; 
+  flex-direction: row;
+}
+
+.menu-container > div {
+  margin: 10px;
+  font-size: 20px;
+  font-weight:lighter;
+  color:black;
+}
+
+.menu-container > div.hover {
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: blueviolet;
+}
+
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}

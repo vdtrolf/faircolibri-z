@@ -4,31 +4,47 @@
 <head>
   <meta charset="utf-8">
   <title>Fair Colibri</title>
+  <link rel="stylesheet" href="{{ get_url(path='faircolibri.css') }}">
+  <script src=""{{ get_url(path='htmx.min.js') }}"></script>
 </head>
 
 <body>
-<p>
-  {% if lang=="en" %}
-  <a href="{{ get_url(path='', lang='en') }}"><img src="{{ get_url(path='faircolibri-logo-text-small.png') }}" width="100"></a>
-  <a href="{{ get_url(path='@/blog/_index.md', lang='en') }}">Posts</a>
-  <a href="{{ get_url(path='@/EGIS/_index.md', lang='en') }}">Egis</a>
-  <a href="{{ get_url(path='@/about/_index.md', lang='en') }}">About</a>
-  <a href="{{ get_url(path='', lang='fr') }}">Fr</a>
-
-  {% else %}
-  <a href="{{ get_url(path='', lang='fr') }}"><img src="{{ get_url(path='faircolibri-logo-text-small.png') }}" width="100"></a>
-  <a href="{{ get_url(path='@/EGIS/_index.md', lang='fr') }}">Egis</a>
-  <a href="{{ get_url(path='@/about/_index.md', lang='fr') }}">A propos</a>
-  <a href="{{ get_url(path='', lang='en') }}">En</a>
-  {% endif %}
-  
-</p>
-
-  <section class="section">
-    <div class="container">
-      {% block content %} {% endblock content %}
+  <div class="body-container">
+    <div class="topbar-container">
+     
+        {% if lang=="en" %}
+        <div class="logo-container">        
+          <div><a href="{{ get_url(path='', lang='en') }}"><img src="{{ get_url(path='faircolibri-logo-text-small.png') }}" width="100"></a></div>
+          <div> 
+            <button hx-get="{{ get_url(path='@/blog/_index.md', lang='en') }}" hx-swap="outerHTML">
+              Blog
+            </button></div>
+        </div>
+        <div class="menu-container">
+          <div><a href="{{ get_url(path='@/blog/_index.md', lang='en') }}">Posts</a></div>
+          <div><a href="{{ get_url(path='@/EGIS/_index.md', lang='en') }}">Egis</a></div>
+          <div><a href="{{ get_url(path='@/about/_index.md', lang='en') }}">About</a></div>
+          <div><a href="{{ get_url(path='', lang='fr') }}">Fr</a></div>
+        </div>
+        {% else %}
+        <div class="logo-container">  
+          <div><a href="{{ get_url(path='', lang='fr') }}"><img src="{{ get_url(path='faircolibri-logo-text-small.png') }}" width="100"></a></div>
+        </div>
+        <div class="menu-container">
+          <div><a href="{{ get_url(path='@/EGIS/_index.md', lang='fr') }}">Egis</a></div>
+          <div><a href="{{ get_url(path='@/about/_index.md', lang='fr') }}">A propos</a></div>
+          <div><a href="{{ get_url(path='', lang='en') }}">En</a></div>
+        </div>
+        {% endif %}
+      </div>
     </div>
-  </section>
+
+    <section class="section-container">
+      <div class="container">
+        {% block content %} {% endblock content %}
+      </div>
+    </section>
+  </div>
 </body>
 
 </html>
